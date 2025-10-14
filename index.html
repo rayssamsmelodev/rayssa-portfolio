@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Rayssa Melo — Portfólio Front-end</title>
+  <style>
+    :root{
+      --bg:#fff6f8; --accent:#d47fa6; --muted:#6b6b6b;
+      --card:#fff; --radius:14px;
+    }
+    body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;background:var(--bg);color:#222}
+    header{padding:48px 20px;text-align:center;background:linear-gradient(180deg,#fff 0,#fff0)}
+    .wrap{max-width:980px;margin:0 auto;padding:20px}
+    .intro{display:flex;gap:24px;align-items:center;flex-wrap:wrap;justify-content:center}
+    .photo{width:120px;height:120px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#f0b3cf);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+    h1{margin:0;font-size:26px;color:var(--accent)}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .card h3{margin:0 0 8px;color:var(--accent)}
+    a.cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none}
+    footer{text-align:center;padding:28px;color:var(--muted)}
+    .meta{font-size:13px;color:var(--muted);margin-top:10px}
+    @media(max-width:520px){.intro{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="intro">
+        <div class="photo">RM</div>
+        <div style="max-width:600px">
+          <h1>Rayssa Melo — Front-end Developer & Corretora</h1>
+          <p class="lead">Estudante de Engenharia de Software • React • HTML/CSS • JavaScript • UX delicado e feminino</p>
+          <div class="meta">Portfólio com projetos reais do nicho imobiliário e ferramentas pessoais.</div>
+        </div>
+      </div>
+
+      <div class="grid" style="margin-top:28px">
+        <div class="card">
+          <h3>🏡 Meu Imóvel dos Sonhos</h3>
+          <p>Landing imobiliária responsiva — destaque visual, gallery e CTA para agendamento.</p>
+          <a class="cta" href="./meu-imovel-dos-sonhos/">Ver projeto</a>
+        </div>
+        <div class="card">
+          <h3>🗓️ Planner Diário</h3>
+          <p>App simples para rotina: oração, treinos, estudos e corretagem — com marcação de concluído.</p>
+          <a class="cta" href="./planner-diario/">Ver projeto</a>
+        </div>
+        <div class="card">
+          <h3>💱 Conversor de Moedas</h3>
+          <p>Pequena ferramenta prática: converter BRL ⇄ USD com UI limpa — demonstra lógica JS.</p>
+          <a class="cta" href="./conversor-moedas/">Ver projeto</a>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;text-align:center">
+        <a href="mailto:seuemail@exemplo.com" class="cta">Contato — seuemail@exemplo.com</a>
+      </div>
+    </div>
+  </header>
+
+  <footer>
+    © Rayssa Melo — Front-end in progress • <small>Português / English (coming soon)</small>
+  </footer>
+</body>
+</html>
